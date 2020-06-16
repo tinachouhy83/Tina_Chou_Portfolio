@@ -1,0 +1,76 @@
+{"intents": [
+        {"tag": "initial_help",
+         "patterns": ["?help" ],
+         "responses": ["How can I help you?"],
+         "context": ["select_category_by_button"]
+        },
+        {"tag": "select_category_by_button",
+         "patterns": [],
+         "responses": ["Here are some options you can know about Covid-19 Information or you can type your questions"],
+         "context": [""]
+        },
+        {"tag": "Reopen",
+         "patterns": ["I want to know when the state will reopen", "What are the phases we have for Covid19?","What phase are we now?","When can I go to restaurants?", "When can we go back to school?"],
+         "responses": ["Starting May 15th, new guidelines will take effect for all counties not entering Phase 1 Reopening. Currently open:<br>Grocery stores, pharmacies, banks and credit unions, and gas stations are all open.<br>Restaurants are open for take-out service only.<br>Stand alone retail operations are open provided they meet required safety and physical distancing guidelines.<br>Indoor and outdoor malls are closed.<br>Local outdoor recreation activities are open, including many state parks.<br>Non-emergency medical care, dentist offices and veterinary care are open and operating, provided they meet required safety guidelines."],
+         "context": [""]
+        },
+        {"tag": "Overview",
+         "patterns": ["What is Covid19?", "What is the current status of Covid19?", "How is the transmission of Covid19?", "What is the overview of Covid19?", "Tell me about Covid19"],
+         "responses": ["The COVID-19 pandemic has exploded since cases were first reported in China in December 2019. As of June 4, 2020, more than 6.5 million cases of COVID-19—caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection—have been reported globally, including >380,000 deaths. Cases have been reported in more than 180 countries, including all 50 states of the United States. Individuals of all ages are at risk for infection and severe disease. However, the probability of fatal disease is highest in people aged ≥65 years and those living in a nursing home or long-term care facility.", 
+                "The estimated incubation period for COVID-19 is up to 14 days from the time of exposure, with a median incubation period of 4 to 5 days.4,8,9 The spectrum of illness can range from asymptomatic infection to severe pneumonia with acute respiratory distress syndrome (ARDS) and death. In a summary of 72,314 persons with COVID-19 in China, 81% of cases were reported to be mild, 14% were severe, and 5% were critical.10 In a report of 1,482 hospitalized patients with confirmed COVID-19 in the United States, the most common presenting symptoms were cough (86%), fever or chills (85%), and shortness of breath (80%), diarrhea (27%), and nausea (24%).7 Other reported symptoms have included, but are not limited to, sputum production, headache, dizziness, rhinorrhea, anosmia, dysgeusia, sore throat, abdominal pain, anorexia and vomiting.", 
+                "The onset and duration of viral shedding and period of infectiousness are not completely defined. Asymptomatic or pre-symptomatic individuals infected with SARS-CoV-2 may have viral RNA detected in upper respiratory specimens before the onset of symptoms.12 Transmission of SARS-CoV-2 from asymptomatic individuals has been described.13-15 The extent to which this occurs remains unknown."],
+         "context": [""]
+        },
+        {"tag": "Care Measures",
+         "patterns": ["What to do when I'm near covid patients?", "My family got covid, what should I do?", "I got covid, what should I do?", "How to take care of covid patients?"],
+         "responses": ["For health care workers who are performing aerosol-generating procedures on patients with COVID-19, the COVID-19 Treatment Guidelines Panel (the Panel) recommends using fit-tested respirators (N95 respirators) or powered air-purifying respirators, rather than surgical masks, in addition to other personal protective equipment (i.e., gloves, gown, and eye protection such as a face shield or safety goggles)", 
+                "For adults with COVID-19 and acute hypoxemic respiratory failure despite conventional oxygen therapy, the Panel recommends high-flow nasal cannula (HFNC) oxygen over noninvasive positive pressure ventilation (NIPPV)", 
+                "For adults with COVID-19 who are receiving supplemental oxygen, the Panel recommends close monitoring for worsening respiratory status and that intubation, if it becomes necessary, be performed by an experienced practitioner in a controlled setting", 
+                "For critically ill patients with COVID-19 who have acute kidney injury and who develop indications for renal replacement therapy, the Panel recommends continuous renal replacement therapy (CRRT), if available"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How can you help me?", "What can you do?", "What help do you provide?", "How can you be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Social Distancing", "I can tell you what Covid-19 is", "I can tell you what to do with severely ill Covid patients", "I can tell you about reopening"],
+         "context": [""]
+        },
+        {"tag": "Social Distancing",
+         "patterns": ["What are social distancing guidelines", "What to do for social distancing", "Give me a list of social distancing steps", "List all social distancing steps"],
+         "responses": ["Stay at least 6 feet (about 2 arms’ length) from other people. Do not gather in groups. Stay out of crowded places and avoid mass gatherings. In addition to everyday steps to prevent COVID-19, keeping space between you and others is one of the best tools we have to avoid being exposed to this virus and slowing its spread locally and across the country and world."],
+         "context": [""]
+        },
+        {"tag": "Transmission",
+         "patterns": ["Tell me how the virus spreads", "How does the covid get spread out", "Tell me how to protect myself from virus", "Can the virus be spread by animals", "How is the virus spread?" ],
+         "responses": ["The virus is thought to spread mainly from person-to-person. Between people who are in close contact with one another (within about 6 feet). Through respiratory droplets produced when an infected person coughs, sneezes, or talks. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. COVID-19 may be spread by people who are not showing symptoms.", 
+                "It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes. This is not thought to be the main way the virus spreads, but we are still learning more about how this virus spreads.", 
+                "At this time, the risk of COVID-19 spreading from animals to people is considered to be low. Learn about COVID-19 and pets and other animals.", 
+                "The best way to prevent illness is to avoid being exposed to this virus. You can take steps to slow the spread. Maintain good social distance (about 6 feet). This is very important in preventing the spread of COVID-19. Wash your hands often with soap and water. If soap and water are not available, use a hand sanitizer that contains at least 60% alcohol. Routinely clean and disinfect frequently touched surfaces. Cover your mouth and nose with a cloth face covering when around others."],
+         "context": [""]
+        },
+        {"tag": "Mask Measures",
+         "patterns": ["Does wearing masks help?", "Should I wear masks?", "Should I cover my mouth with cloth?", "Should I cover my face with cloth?"],
+         "responses": ["CDC continues to study the spread and effects of the novel coronavirus across the United States.  We now know from recent studies that a significant portion of individuals with coronavirus lack symptoms (“asymptomatic”) and that even those who eventually develop symptoms (“pre-symptomatic”) can transmit the virus to others before showing symptoms.  This means that the virus can spread between people interacting in close proximity—for example, speaking, coughing, or sneezing—even if those people are not exhibiting symptoms.  In light of this new evidence, CDC recommends wearing cloth face coverings in public settings where other social distancing measures are difficult to maintain (e.g., grocery stores and pharmacies) especially in areas of significant community-based transmission."],
+         "context": [""]
+        },
+        {"tag": "Gloves Measures",
+         "patterns": ["Should I wear gloves?", "Can gloves protect me from the virus?", "Does wearing gloves help?", "Can gloves prevent covid?"],
+         "responses": ["For the general public, CDC recommends wearing gloves when you are cleaning or caring for someone who is sick. In most other situations, like running errands, wearing gloves is not necessary. Instead, practice everyday preventive actions like keeping social distance (at least 6 feet) from others, washing your hands with soap and water for 20 seconds (or using a hand sanitizer with at least 60% alcohol), and wearing a cloth face covering when you have to go out in public."],
+         "context": [""]
+        },
+        {"tag": "Higher Risk",
+         "patterns": ["I have some health problems and I think I have higher risk", "What should my grandparents do?", "What should my parents do?", "What should old people do?"],
+         "responses": ["If you are at higher risk for serious illness from COVID-19 because of your age or because you have a serious long-term health problem, it is extra important for you to take actions to reduce your risk of getting sick with the disease. Stay home if possible. Wash your hands often. Take everyday precautions to keep space between yourself and others (stay 6 feet away, which is about two arm lengths). Keep away from people who are sick. Stock up on supplies. Clean and disinfect frequently touched services. Avoid all cruise travel and non-essential air travel. Call your healthcare professional if you have concerns about COVID-19 and your underlying condition or if you are sick."],
+         "context": [""]
+        },
+        {"tag": "Statistics",
+         "patterns": ["How many cases do we have?", "Tell me the number of cases", "I want to know the current number of cases", "How many people have died from covid?"],
+         "responses": ["Please go to this CDC website to see the latest numbers: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html "],
+         "context": [""]
+        }
+   ]
+}
